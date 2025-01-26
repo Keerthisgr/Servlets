@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form action="signin" method="post">
+    <h2>Sign-In Form</h2>
+
+    <div class="form-group">
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" name="userId" placeholder="Enter your user ID">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com">
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age">
+    </div>
+
+    <div class="form-group">
+        <label for="mobile">Phone Number</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="123-456-7890">
+    </div>
+
+    <div class="form-group">
+        <label for="occupation">Occupation</label>
+        <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation">
+    </div>
+
+    <div class="form-group">
+        <label for="state">State</label>
+        <select id="state" name="state">
+            <option value="">Select State</option>
+            <option value="California">California</option>
+            <option value="Texas">Karnataka</option>
+            <option value="Florida">Florida</option>
+            <option value="New York">New York</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="zipcode">Zip Code</label>
+        <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zip code">
+    </div>
+
+    <input type="submit" value="Sign In">
+</form>
+
+</body>
+</html>
